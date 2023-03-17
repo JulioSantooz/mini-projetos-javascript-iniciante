@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(-105deg, rgb(164, 163, 163), rgba(74, 195, 225, 0.464));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#containerTabuada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-tabuada {
+    background-color: rgb(206, 206, 206);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.content-tabuada > h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-form > form {
+    background-color: rgba(203, 248, 240, 0.338);
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+}
+
+form > label {
+    margin-bottom: 3px;
+}
+
+.inputTabuada {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form > .container-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#btnCalcular {
+    padding: 6px 13px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-right: 4px;
+    background-color: rgba(74, 195, 225, 0.464);
+    transition: ease 1s;
+    color: white;
+}
+
+#btnCalcular:hover {
+    background-color: transparent;
+    transition: ease 1s;
+    border: 1px solid white;
+}
+
+#btnLimpar {
+    padding: 6px 13px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-right: 4px;
+    background-color: rgba(74, 195, 225, 0.464);
+    transition: ease 1s;
+    color: white;
+}
+
+#btnLimpar:hover {
+    background-color: transparent;
+    transition: ease 1s;
+    border: 1px solid white;
+}
+
+.container-tabuada {
+    width: 200px;
+    height: 230px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.container-tabuada > ul {
+    list-style: none;
+    padding-left: 45px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.container-historico {
+    background-color: rgba(203, 248, 240, 0.338);;
+    width: 200px;
+    height: 100px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+.content {
+    margin-top: -25px;
+}
+
+#qtdTabuadas {
+    background-color: rgba(255, 255, 255, 0.217);
+    margin-top: -18px;
+    border-radius: 5px;
+}
+
+#tabuadasJaRealizadas {
+    background-color: rgba(255, 255, 255, 0.217);
+    margin-top: -18px;
+    border-radius: 5px;
+    max-width: 200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(74, 195, 225, 0.464);
+}

@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-105deg, rgb(243, 162, 162), rgba(30, 102, 7, 0.2));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-jogador {
+    background-color: rgb(240, 164, 164);
+    width: 300px;
+    height: 220px; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container-jogador > .container-img {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#imgTesoura {
+    margin: 0 15px;
+}
+
+.container-jogador > form > .container-input {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btnJogar {
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 4px;
+    background-color: rgb(68, 70, 68);
+    cursor: pointer;
+    color: white;
+}
+
+#btnResetar {
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 4px;
+    background-color: rgb(46, 129, 129);
+    cursor: pointer;
+    color: white;
+}
+
+/**/
+
+.container-computador {
+    background-color: rgb(240, 164, 164);
+    width: 300px;
+    height: 220px; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.container-img-pc {
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/**/
+.container-resultado {
+    background-color: rgb(240, 164, 164);
+    width: 300px;
+    height: 220px; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+#placar {
+    background-color: white;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+/**/
+@media(max-width: 550px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+

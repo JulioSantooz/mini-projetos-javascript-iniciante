@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-105deg, rgb(162, 162, 243), rgba(30, 102, 7, 0.2));
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body > h1 {
+    color: white;
+}
+
+.container-card {
+    width: 350px;
+    height: 390px;
+    background-color: rgb(141, 141, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 3px;
+}
+
+.header-card > img {
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.container-input > label {
+    margin-bottom: 5px;
+    color: rgb(239, 228, 228);
+    font-weight: 550;
+}
+
+.container-input > input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.container-button > input {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+}
+
+.btn-calcular {
+    background-color: rgb(239, 184, 81);
+    color: white;
+    transition: ease .7s;
+    text-transform: capitalize;
+}
+
+.btn-calcular:hover {
+    background-color: transparent;
+    color: rgb(239, 184, 81);
+    border: 1px solid rgb(239, 184, 81);
+    transition: ease .7s;
+    cursor: pointer;
+}
+
+.btn-limpar {
+    background-color: rgb(239, 105, 96);
+    color: white;
+    transition: ease .7s;
+    text-transform: capitalize;
+}
+
+.btn-limpar:hover {
+    background-color: transparent;
+    color: rgb(239, 105, 96);
+    border: 1px solid rgb(239, 105, 96);
+    transition: ease .7s;
+    cursor: pointer;
+}
+
+@media(max-width: 360px) {
+    .container-card {
+        max-width: 260px;
+    }
+    
+    .header-card > img {
+        max-width: 240px;
+    }
+
+    .container-input {
+        max-width: 220px;
+    }
+}

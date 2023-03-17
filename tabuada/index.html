@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+</head>
+<body onload="resetar()">
+
+    <div id="containerTabuada">
+        <div class="content-tabuada">
+            <h1>Tabuada</h1>
+            <div class="container-form">
+                <form action="" name="frmTabuada">
+                    <label for="">Qual tabuada?</label>
+                    <input class="inputTabuada" type="text" name="inputTabuada" placeholder="Digite">
+                    <div class="container-button">
+                        <input id="btnCalcular" type="button" value="Calcular" onclick="calcular()">
+                        <input id="btnLimpar" type="reset" value="Limpar" onclick="resetar()">
+                    </div>
+                </form>
+            </div>
+
+            <div class="container-tabuada">
+                <ul>
+                    <li id="operacao1"></li>
+                    <li id="operacao2"></li>
+                    <li id="operacao3"></li>
+                    <li id="operacao4"></li>
+                    <li id="operacao5"></li>
+                    <li id="operacao6"></li>
+                    <li id="operacao7"></li>
+                    <li id="operacao8"></li>
+                    <li id="operacao9"></li>
+                    <li id="operacao10"></li>
+                </ul>
+            </div>
+
+            <div class="container-historico">
+                <div class="content">
+                    <h4>Quantidade:</h4>
+                    <h3 id="qtdTabuadas"></h3>
+                    <h4>Tabuadas realizadas:</h4>
+                    <h3 id="tabuadasJaRealizadas"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

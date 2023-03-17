@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicativo - Calculadora Flex</title>
+</head>
+<body>
+    <h1>Calculadora Flex</h1>
+
+    <div class="container-card">
+        <div class="header-card">
+            <img src="img/neutro.png" alt="Calculadora Flex" id="status">
+        </div>
+        <form name="frmFlex">
+            <div class="container-input">
+                <label for="">Etanol:</label>
+                <input type="text" placeholder="Informe o valor" name="txtEtanol">
+            </div>
+
+            <div class="container-input">
+                <label for="">Gasolina:</label>
+                <input type="text" placeholder="Informe o valor" name="txtGasolina">
+            </div>
+
+            <div class="container-button">
+                <input type="button" value="calcular" class="btn-calcular" onclick="calcular()">
+                <input type="reset" value="limpar" class="btn-limpar" onclick="resetar()">
+            </div>
+        </form>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
